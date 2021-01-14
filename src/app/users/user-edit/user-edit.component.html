@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <form [formGroup]="userForm">
+        <label for="username">Имя</label>
+        <input 
+        type ="text" 
+        class="form-control" 
+        formControlName="name" 
+        id="username"
+        />
+    </form>
+    <form [formGroup]="userForm">
+        <label for="usersurname">Фамилия</label>
+        <input 
+        type ="text" 
+        class="form-control" 
+        formControlName="surname" 
+        id="usersurname"
+        />
+    </form>
+    <form [formGroup]="userForm">
+        <label for="userpatronymic">Отчество</label>
+        <input 
+        type ="text" 
+        class="form-control" 
+        formControlName="patronymic" 
+        id="userpatronymic"
+        />
+    </form>
+    <form [formGroup]="userForm">
+        <label for="usertype">Отдел</label>
+        <select class="form-control" formControlName="type" id="usertype">
+            <option [ngValue]="myWorkerType.it">Ит отдел</option>
+            <option [ngValue]="myWorkerType.sales">Отдел продаж</option>
+            <option [ngValue]="myWorkerType.delivery">Отдел доставки</option>
+            <option [ngValue]="myWorkerType.legal">Отдел юриспруденции</option>
+          </select>
+    </form>
+    <form [formGroup]="userForm">
+        <label for="usernumber">Номер телефона</label>
+        <input 
+        type ="text" 
+        class="form-control" 
+        formControlName="number" 
+        id="usernumber"
+        [textMask]="{mask: numberMask}"
+        
+        />
+    </form>
+    <form [formGroup]="userForm">
+        <label for="useremail">Емайл</label>
+        <input 
+        type ="text" 
+        class="form-control" 
+        formControlName="email" 
+        id="useremail"
+        />
+    </form>
+    <form class="mb-2" [formGroup]="userForm">
+        <label for="userbirthday">Емайл</label>
+        <input 
+        type ="date" 
+        class="form-control" 
+        formControlName="birthday" 
+        id="userbirthday"
+        />
+    </form>
+    <button class="btn btn-outline-primary" [disabled]="userForm.invalid" (click)="onSave();">
+        Сохранить
+    </button>
+    <button class="btn btn-outline-danger ml-2" *ngIf="id != null" (click)="onDelete();">
+        Удалить
+    </button>
+</div>

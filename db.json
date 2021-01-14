@@ -1,0 +1,44 @@
+{
+  "musers": [
+    {
+      "name": "Гиннадий",
+      "surname": "Горин",
+      "patronymic": "Иванович",
+      "type": 1,
+      "number": "+7(123)-141-4211",
+      "email": "genatop@mail.ru",
+      "birthday": "1984-11-10",
+      "id": 2
+    },
+    {
+      "name": "Василий",
+      "surname": "Емельняко",
+      "patronymic": "Евгеневич",
+      "type": 2,
+      "number": "+7(142)-456-3432",
+      "email": "kitchen@yandex.ru",
+      "birthday": "1996-10-10",
+      "id": 3
+    },
+    {
+      "name": "Матвеей",
+      "surname": "Голунов",
+      "patronymic": "Польшевич",
+      "type": 3,
+      "number": "+7(235)-224-2343",
+      "email": "glowdsress@mail.ru",
+      "birthday": "2000-11-11",
+      "id": 4
+    },
+    {
+      "name": "Вячеслав",
+      "surname": "Самсонов",
+      "patronymic": "Александрович",
+      "type": 0,
+      "number": "+7(432)-412-321_",
+      "email": "nokk3r@mail.ru",
+      "birthday": "2021-01-16",
+      "id": 5
+    }
+  ]
+}
